@@ -288,7 +288,7 @@
         -->
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
         <quarkus.platform.version>3.20.2</quarkus.platform.version>
-        <version.org.kie.kogito>999-20250713-SNAPSHOT</version.org.kie.kogito>
+        <version.org.kie.kogito>999-SNAPSHOT</version.org.kie.kogito>
         <kogito.bom.group-id>org.kie.kogito</kogito.bom.group-id>
         <kogito.bom.artifact-id>kogito-bom</kogito.bom.artifact-id>
         <!--
@@ -363,11 +363,11 @@
       <dependencies>
         <!--
         -->
-        <dependency>
+        <!-- <dependency>
           <groupId>${group-id.jbpm.quarkus.devui}</groupId>
           <artifactId>${artifact-id.jbpm.quarkus.devui}</artifactId>
           <version>${version.jbpm.quarkus.devui}</version>
-        </dependency>
+        </dependency> -->
         <dependency>
           <groupId>io.quarkiverse.wiremock</groupId>
           <artifactId>quarkus-wiremock</artifactId>

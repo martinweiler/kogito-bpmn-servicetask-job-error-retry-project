@@ -22,7 +22,7 @@ public class DummyServiceTask {
 
     Logger logger = Logger.getLogger(DummyServiceTask.class);
 
-    public String callDummy(CandidateDataRestDTO candidateDataRestDto) {
+    public String callDummy(CandidateDataRestDTO candidateDataRestDto, Boolean throwException) {
         Response response = null;
 
         logger.info("TEMPORAL CANDIDATE DATA: " + candidateDataRestDto.toString());
@@ -33,7 +33,10 @@ public class DummyServiceTask {
             logger.info("DUMMY RESPONSE: " + response.readEntity(String.class));
         }
         catch(Exception ex) {
-            throw new WorkItemHandlerRuntimeException(ex);
+            logger.info("*** caught exception " + ex.getMessage() + ", rethrow: " + throwException);
+            if(throwException) {
+                throw new WorkItemHandlerRuntimeException(ex);
+            }
         }   
         
         return "success";
