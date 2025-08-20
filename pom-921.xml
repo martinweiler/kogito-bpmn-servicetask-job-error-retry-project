@@ -437,18 +437,18 @@
         </dependency>
         <!-- Jobs Service -->
         <dependency>
-          <groupId>org.kie.kogito</groupId>
+          <groupId>org.kie</groupId>
           <artifactId>kogito-addons-quarkus-jobs</artifactId>
         </dependency>
         <dependency>
           <groupId>org.kie.kogito</groupId>
-          <artifactId>kogito-addons-quarkus-jobs-jpa</artifactId>
+          <artifactId>jobs-service-storage-jpa</artifactId>
         </dependency>
         <!-- Jobs Management endpoints -->
-        <!-- <dependency>
+        <dependency>
           <groupId>org.kie</groupId>
           <artifactId>kogito-addons-quarkus-jobs-management</artifactId>
-        </dependency> -->
+        </dependency>
       </dependencies>
     </profile>
 
